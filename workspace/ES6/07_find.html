@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        const arr = [10,20,30,20,50,60]
+        const result1 = arr.find (item=> item>30)
+        console.log(result1)
+
+        const result2 = arr.find (item=> item===20)
+        console.log(result2)
+
+        const result3 = arr.findIndex(item=> item===20)
+        console.log(result3)
+
+        console.log("--------------")
+        
+        const data1=[
+            {id : 1 , name: '홍길동 ' , age : 25},
+            {id : 2 , name: '어피치 ' , age : 20},
+            {id : 3 , name: '프로도 ' , age : 22},
+        ]
+        const data2 =data1.find(item=> item.name ==="라이언 ")
+        console.log(data2)
+        //요소의 값을 찾지 못할경우 undifind 라고 뜬다 . 
+
+
+
+
+        const data3 = data1.findIndex(item=> item.name ==="프로도")
+        console.log(data3)
+        //없을 경우에는  -1 이 떨어진다 . 
+
+
+</script>
+
+<!-- 
+    find = > 처음 값을 갖고온다 . 
+    find - filter 와 비슷 , 결과는 하나의값 ( 처음 만나는 값을 가져온다 .)
+ -->
+</body>
+</html>

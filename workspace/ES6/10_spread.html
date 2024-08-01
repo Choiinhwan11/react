@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        const arr1 =['강아지','고양이','토끼' , '펭귄']
+        const arr2 =arr1.concat()
+        const arr3 = [...arr1] // ... 이 arr1 을 똑같이 복사하는 효과를 갖고온다 . 
+
+
+        const arr4  = arr1.concat('코끼리' , '기린 ') // 추가하는 효과를 갖고있다 .
+        //복사본을갖고 복사본을 받은값을 추가한 것이므로 원본은 바뀌지 않는다 .
+        const arr5  = [...arr1,'코끼리 ','기린']
+        const arr6  = ['코끼리 ', ...arr1,'기린']
+        //아무데나 넣을 수 있다 . 
+
+        console.log('arr1 = ' + arr1)
+        console.log('arr2 = ' + arr2)
+        console.log('arr3 = ' + arr3)
+        console.log('arr4 = ' + arr4)
+        console.log('arr5 = ' + arr5)
+        console.log('arr6 = ' + arr6)
+
+        //배열에서는 추가가 되지만 , 객체에서는 덮어쓰는 효과를 갖고있다 . 
+        const dog1={
+            name:'멍멍이',
+            age : 2
+        }
+
+        const dog2 ={...dog1,name:'진돗개',age: 5 }
+        console.log(dog2)
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- spread 
+    ...( 전개 연산자 )
+-->

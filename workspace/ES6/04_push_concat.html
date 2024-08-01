@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        const arr1 = [10,20,30]
+        arr1.push(40)
+        arr1.push(50)
+        arr1.push(60)
+
+        console.log(arr1)
+        console.log('---------------')
+        
+        const arr2 = [10,20,30]
+        const arr3 = arr.concat() ; //복사본
+
+
+
+        console.log(arr2)
+        console.log(arr3)
+        console.log('-------------------')
+ 
+        const arr4 = arr2.concat(40,50,60);
+        console.log(arr2)
+        console.log(arr4)
+        console.log('---------')
+
+
+
+        const data1=[
+            {id : 1 , name: '홍길동 ' , age : 25},
+            {id : 2 , name: '어피치 ' , age : 20},
+            {id : 3 , name: '프로도 ' , age : 22},
+        ]
+
+        console.log(data1[0].id 
+                    ,data1[0].name 
+                    ,data1[0].age)
+
+        const data2 =data1.concat({id:4,name:'라이언',age:30})
+        console.log(data2)
+
+
+
+
+
+</script>
+</body>
+</html>
+<!-- 
+    0벼열 ㅡ 메서드 () 중 부변성 유지 
+    1. push :배열 뒷부분에 값을 삽입 ( 배열의 값이 변견된다 .)
+    2.concat : 다수의 배열을 합치고 병합된 배열의 사본을 반환 기존의 배열은 건드리지 않음 - 불변성 유지
+
+ -->

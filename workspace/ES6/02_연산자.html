@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        const a = 25 
+        const b = true 
+        const c = false 
+        const d = undefined
+
+
+        const result = a >= 30? '참' : '거짓 '
+        console.log(result)
+        // 거짓이 찍혀 나온다 . 
+
+        const result2 = b && '참에대한 결과입니다. '
+        console.log(result2)
+
+        const result3= c || '거짓에대한 결과입니다. '
+        console.log(result2)
+
+        const result4 = d || '값이 존재 하지 안습니다. '
+        console.log(result2)
+
+        const result5 = c ===false?'참 ': '거짓'
+        console.log(result5)
+        //비추천 문장이다 .
+
+
+
+        const score = 68 
+        const grade = score>=90?'A':score>=80?'B':score>=70?'C':score=60?'D':'F'
+
+        console.log (`점수가 ${score} 점 이므로 ${grade} 학점 입니다 .`)
+        
+
+
+
+    </script>
+
+
+<!--연산자 
+
+1. === 같다 ! == 다르다 
+2. 삼항연산자 
+형식 조건 ? true :false 일때 
+3. && 
+형식 true && 참일때 수행하는 결과 
+4 || 
+(false, null , undefined)|| 거짓일때 수행하는 결과 
+-->
+</body>
+</html>

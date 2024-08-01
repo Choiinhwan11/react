@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        const arr = [10,20,30,40,50,60]
+
+
+        //요소 중에서 30 보다 큰 애들을 걸러낼라 . 
+        const result =arr.filter(item=> item>30)
+        console.log(result)
+
+        const result2 = arr.filter(item=>item===40)
+        console.log(result2)
+
+        const result3 = arr.filter(item => item!==40)
+        console.log(result3)
+
+
+        console.log("---------------")
+
+        const data1=[
+            {id : 1 , name: '홍길동 ' , age : 25},
+            {id : 2 , name: '어피치 ' , age : 20},
+            {id : 3 , name: '프로도 ' , age : 22},
+        ]
+
+
+        const data2 = data1.filter(item=> item.name ==='홍길동')
+        console.log(data2)
+
+        const data3 = data1.filter(item=> item.id !=='2')
+        console.log(data3)
+
+
+
+
+    </script>
+    <!--filter 도 map 함수와 마찬가자로 콜백 함수를 인자로 받는데 
+        ㅇ모든 원소를 한번씩 돌리면서 콜백 함수의 몸체 부분에서 true 를 반환하는 원소들만 걸러준 결과  
+    
+    [형식]
+    const new Arr =arr.filter ( 현재값 => 조건)
+    -->
+
+</body>
+</html>
